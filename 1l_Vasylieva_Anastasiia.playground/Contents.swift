@@ -43,6 +43,7 @@ corniD()
 var summ: Float = 1000
 var proc: Float = 10
 var year: Int = 5
+
 func vklad(){
     for i in 1 ... year {
         let newSumm = summ + (summ / proc)
@@ -53,7 +54,4 @@ func vklad(){
 print("Через", year, "лет будет", summ , "рублей")
 }
 vklad()
-
-
-//var str = Array(readLine(strippingNewline: true)!.characters)
 
