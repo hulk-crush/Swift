@@ -6,13 +6,13 @@ import Darwin.C.math
 //Даны катеты прямоугольного треугольника. Найти площадь, периметр и гипотенузу треугольника.
 var n: Float = 2.0
 var m: Float = 3.0
-var gipotenuza = sqrt(pow(n, 2) + pow(m, 2))
+var hypotenuse = sqrt(pow(n, 2) + pow(m, 2))
 
 func S(){
     (n * m * 0.5)
 }
 func P(){
-    (n + m + gipotenuza)
+    (n + m + hypotenuse)
 }
 S()
 P()
@@ -43,6 +43,7 @@ corniD()
 var summ: Float = 1000
 var proc: Float = 10
 var year: Int = 5
+
 func vklad(){
     for i in 1 ... year {
         let newSumm = summ + (summ / proc)
@@ -53,7 +54,4 @@ func vklad(){
 print("Через", year, "лет будет", summ , "рублей")
 }
 vklad()
-
-
-//var str = Array(readLine(strippingNewline: true)!.characters)
 
