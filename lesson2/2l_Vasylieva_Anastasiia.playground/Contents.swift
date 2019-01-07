@@ -20,20 +20,32 @@ func multiple3() {
 }
 multiple3()
 //3. Создать возрастающий массив из 100 чисел.
-
-var arr: [Int] = []
-for i in 1...100{
-    arr.append(i)
-}
 //4. Удалить из этого массива все четные числа и все числа, которые не делятся на 3.
+var arr: [Int] = []
+for i in 0...100{
+    if i % 3 != 0 && i % 2 != 0{
+        arr.append(i)
+    }
+}
+print(arr)
 
-//var filtred = arr.filter({$0 % 2 != 0 && $0 % 3 != 0 })
-//arr = filtred
-//print(arr)
+
+/*testing
+(var arr: [Int] = []
+for i in 1...100{
+   arr.append(i)
+}
+var filtred = arr.filter({$0 % 2 != 0 && $0 % 3 != 0 })
+arr = filtred
+print(arr)
 for n in arr where (n % 2 == 0) || (n % 3 == 0) {
-    arr.remove(at : (arr.index(of: n)!))
+   arr.remove(at : (arr.index(of: n)!))
 }
  print(arr)
+)*/
+
+
+
 //5. *Написать функцию, которая добавляет в массив новое число Фибоначчи, и добавить при помощи нее 100 элементов.
 func fibonacci (n: Int) -> (Decimal) {
     if (n < 3) {
