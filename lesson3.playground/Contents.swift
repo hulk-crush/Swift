@@ -130,5 +130,8 @@ car2.changeColor(c: "black")
 
 truck1.engineState = .stop
 truck1.AreWindowsOpen = .close
+truck2.AreWindowsOpen = .open
 truck2.engineState = .stop
 truck2.truckVolume = 5678908
+truck2.changeColor(c: "white")
+truck2.color
