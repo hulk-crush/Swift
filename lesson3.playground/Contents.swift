@@ -15,9 +15,11 @@ enum engineState {
 enum AreWindowsOpen {
     case open, close
 }
+
 enum trunkState {
     case full, empty
 }
+
 struct car {
     let brandAuto : String
     var color : String
