@@ -90,6 +90,7 @@ car1.wheels
 car2.brand
 car2.stateEngine
 car2.doesWorkCar()
+car2.wheels
 
 
 
